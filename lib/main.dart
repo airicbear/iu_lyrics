@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(IULyricsApp());
@@ -30,6 +32,23 @@ class _AlbumsState extends State<Albums> {
 
   final albums = ['Modern Times', 'Chat-Shire', 'Palette'];
 
+  final Random _random = new Random();
+  List<Color> _colors = [Colors.orange, Colors.orange, Colors.orange];
+
+  void _changeColor() {
+    setState(() {
+
+      _colors = [
+        new Color.fromRGBO(
+          _random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0),
+        new Color.fromRGBO(
+          _random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0),
+        new Color.fromRGBO(
+          _random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0)
+      ];
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,10 +58,14 @@ class _AlbumsState extends State<Albums> {
       body: ListView.builder(
         itemCount: albums.length,
         itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-              title: Text(albums[index]),
-            ),
+          return GestureDetector(
+            onTap: _changeColor,
+            child: Card(
+              child: ListTile(
+                title: Text(albums[index]),
+              ),
+              color: _colors[index],
+            )
           );
         },
       ),
