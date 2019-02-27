@@ -35,11 +35,9 @@ class _AlbumsState extends State<Albums> {
   final Random _random = new Random();
   List<Color> _colors = [Colors.orange, Colors.orange, Colors.orange];
 
-  void _changeColor() {
+  void _changeColor(index) {
     setState(() {
-      for (var i = 0; i < _colors.length; i++) {
-        _colors[i] = new Color.fromRGBO(_random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0);
-      }
+      _colors[index] = new Color.fromRGBO(_random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0);
     });
   }
 
@@ -53,7 +51,7 @@ class _AlbumsState extends State<Albums> {
         itemCount: albums.length,
         itemBuilder: (context, index) {
           return GestureDetector(
-            onTap: _changeColor,
+            onTap: () => _changeColor(index),
             child: Card(
               child: ListTile(
                 title: Text(albums[index]),
