@@ -37,15 +37,9 @@ class _AlbumsState extends State<Albums> {
 
   void _changeColor() {
     setState(() {
-
-      _colors = [
-        new Color.fromRGBO(
-          _random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0),
-        new Color.fromRGBO(
-          _random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0),
-        new Color.fromRGBO(
-          _random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0)
-      ];
+      for (var i = 0; i < _colors.length; i++) {
+        _colors[i] = new Color.fromRGBO(_random.nextInt(256), _random.nextInt(256), _random.nextInt(256), 1.0);
+      }
     });
   }
 
