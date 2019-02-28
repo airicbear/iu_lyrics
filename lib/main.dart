@@ -7,11 +7,11 @@ class IULyricsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'IU Lyrics',
+      title: 'IU (아이유) Lyrics',
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: Albums(title: 'IU Lyrics'),
+      home: Albums(title: 'IU (아이유) Lyrics'),
     );
   }
 }

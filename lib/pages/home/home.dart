@@ -13,14 +13,16 @@ class _AlbumsState extends State<Albums> {
 
   final albums = ['Modern Times', 'Chat-Shire', 'Palette'];
 
+  void _openAlbum(String albumTitle) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SecondRoute(albumTitle: albumTitle)),
+    );
+  }
+
   Widget _buildRow(String albumTitle) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => SecondRoute()),
-        );
-      },
+      onTap: () => _openAlbum(albumTitle),
       child: Card(
         child: InkWell(
           splashColor: Colors.blue.withAlpha(30),
@@ -49,11 +51,16 @@ class _AlbumsState extends State<Albums> {
 }
 
 class SecondRoute extends StatelessWidget {
+
+  String albumTitle;
+
+  SecondRoute({Key key, @required this.albumTitle}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Second Route"),
+        title: Text(albumTitle),
       ),
       body: Center(
         child: RaisedButton(
