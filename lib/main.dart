@@ -11,7 +11,7 @@ class IULyricsApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: Albums(title: 'IU (아이유) Lyrics'),
+      home: AlbumList(title: 'IU (아이유) Lyrics'),
     );
   }
 }
