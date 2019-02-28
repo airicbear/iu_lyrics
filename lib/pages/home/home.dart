@@ -22,15 +22,12 @@ class _AlbumListState extends State<AlbumList> {
   }
 
   Widget _buildRow(String albumTitle) {
-    return GestureDetector(
-      onTap: () => _openAlbum(albumTitle),
-      child: Card(
-        child: InkWell(
-          splashColor: Colors.blue.withAlpha(30),
-          child: ListTile(
-            title: Text(albumTitle),
-          ),
-        )
+    return Card(
+      child: InkWell(
+        onTap: () => _openAlbum(albumTitle),
+        child: ListTile(
+          title: Text(albumTitle),
+        ),
       )
     );
   }
