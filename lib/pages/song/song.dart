@@ -14,9 +14,8 @@ class Song extends StatelessWidget {
   Widget _buildRowSong(int index) {
     return InkWell(
       onTap: () {},
-      child: Container(
-        child: Text(songLyrics[index].toString()),
-        padding: const EdgeInsets.all(15.0),
+      child: ListTile(
+        title: Text(songLyrics[index].toString()),
       ),
     );
   }

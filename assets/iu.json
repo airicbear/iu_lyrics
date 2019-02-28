@@ -1,5 +1,48 @@
 [
   {
+    "album": "Palette",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Chat-Shire",
+    "songs": [
+      {
+        "title": "Glasses",
+        "lyrics": []
+      },
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "A flower bookmark 2",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
     "album": "Modern Times",
     "songs": [
       {
@@ -60,17 +103,198 @@
     ]
   },
   {
-    "album": "Chat-Shire",
+    "album": "REAL",
     "songs": [
-      {"title": "Glasses", "lyrics": []},
-      {"title": "Shoes", "lyrics": []}
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
     ]
   },
   {
-    "album": "Palette",
+    "album": "IU...IM",
     "songs": [
-      {"title": "Palette", "lyrics": []},
-      {"title": "Jam Jam", "lyrics": []}
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Growing Up",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "A flower bookmark",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Autumn Morning",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Can't Love You Anymore",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Through the Night",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "heart",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "SOGYEOKDONG",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "The Spring of Twenty",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "My Last Love OST Part.4",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "REAL+",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Nitpicking",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "First Love",
+    "songs": [
+      {
+        "title": "first love",
+        "lyrics": []
+      }, 
+      {
+        "title": "first love",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Lost and Found",
+    "songs": [
+      {
+        "title": "Palette",
+        "lyrics": []
+      },
+      {
+        "title": "Jam Jam",
+        "lyrics": []
+      }
     ]
   }
 ]

@@ -36,11 +36,8 @@ class _LyricsListState extends State<LyricsList> {
   Widget _buildRowSong(String songTitle, int songIndex, List<dynamic> songLyrics) {
     return InkWell(
       onTap: () => _openSong(songTitle, songIndex, songLyrics),
-      child: Container(
-        child: Text(
-          widget.lyrics[widget.albumIndex]['songs'][songIndex]['title']
-        ),
-        padding: const EdgeInsets.all(15.0),
+      child: ListTile(
+        title: Text(widget.lyrics[widget.albumIndex]['songs'][songIndex]['title'])
       ),
     );
   }
