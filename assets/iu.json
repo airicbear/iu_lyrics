@@ -2,22 +2,75 @@
   {
     "album": "Modern Times",
     "songs": [
-      "Havana",
-      "Modern Times"
+      {
+        "title": "Havana",
+        "lyrics": [
+          "They say everyone sings over there",
+          "Living in front of the crashing waves",
+          "In the most unfamiliar city with the most familiar you",
+          "How about it? Doesn’t it sound great?",
+          "",
+          "Here, let’s talk about all of our secrets that we couldn’t say before",
+          "Sharing them loudly as we walk together",
+          "Memorize this line, hola muchacha hermosa",
+          "Tell that to me every morning",
+          "",
+          "",
+          "A drink for you, a drink for me",
+          "A late night pina colada",
+          "Smile brightly, so pretty, click",
+          "Let’s remember this moment",
+          "",
+          "Havana, you’re my Havana",
+          "Your unknown eyes",
+          "Havana, always a heart fluttering feeling",
+          "Your existence makes me dream",
+          "",
+          "The crazier and busier it gets",
+          "The short moments I get with the precious you",
+          "My days are happy because someone is waiting for me",
+          "I’m always half-excited",
+          "",
+          "For a moment, the sun looks like a sweet tangerine",
+          "The last moment before the day time leaves",
+          "Time to get ready to see you",
+          "I will leave for a vacation",
+          "",
+          "Havana, you’re my Havana",
+          "Your unknown eyes",
+          "Havana, always a heart fluttering feeling",
+          "Your existence makes me dream",
+          "",
+          "You are my break",
+          "My dilemmas and worries disappear",
+          "Every day, I leave far away",
+          "When I see you",
+          "",
+          "",
+          "Havana, you’re my Havana",
+          "Your unknown eyes",
+          "Havana, always a heart fluttering feeling",
+          "Your existence makes me dream"
+        ]
+      },
+      {
+        "title": "Modern Times",
+        "lyrics": []
+      }
     ]
   },
   {
     "album": "Chat-Shire",
     "songs": [
-      "Glasses",
-      "Shoes"
+      {"title": "Glasses", "lyrics": []},
+      {"title": "Shoes", "lyrics": []}
     ]
   },
   {
     "album": "Palette",
     "songs": [
-      "Palette",
-      "Jam Jam"
+      {"title": "Palette", "lyrics": []},
+      {"title": "Jam Jam", "lyrics": []}
     ]
   }
 ]
