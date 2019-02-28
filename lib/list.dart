@@ -8,7 +8,7 @@ class LyricsList extends StatelessWidget {
   Widget _buildRowSong(int index) {
     return InkWell(
       onTap: () {},
-      child: new Container(
+      child: Container(
         child: Text(
           lyrics[index]['songs'][0] + "\n" + lyrics[index]['songs'][1],
         ),
@@ -19,13 +19,13 @@ class LyricsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new ListView.builder(
-        itemCount: lyrics == null ? 0 : lyrics.length,
-        itemBuilder: (BuildContext context, int index) {
-          return
-            new Card(
-              child: _buildRowSong(index),
-            );
-        });
+    return ListView.builder(
+      itemCount: lyrics == null ? 0 : lyrics.length,
+      itemBuilder: (BuildContext context, int index) {
+        return Card(
+            child: _buildRowSong(index),
+          );
+      },
+    );
   }
 }

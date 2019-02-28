@@ -15,8 +15,8 @@ class Album extends StatelessWidget {
       appBar: AppBar(
         title: Text(albumTitle),
       ),
-      body: new Container(
-        child: new FutureBuilder(
+      body: Container(
+        child: FutureBuilder(
           future: DefaultAssetBundle
               .of(context)
               .loadString('assets/iu.json'),
