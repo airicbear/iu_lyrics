@@ -50,7 +50,7 @@ class _LyricsListState extends State<LyricsList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: widget.lyrics[widget.albumIndex]['songs'].length,
+      itemCount: widget.lyrics[widget.albumIndex]['songs'] == null ? 0 : widget.lyrics[widget.albumIndex]['songs'].length,
       itemBuilder: (BuildContext context, int index) {
         return Card(
           child: _buildRowSong(

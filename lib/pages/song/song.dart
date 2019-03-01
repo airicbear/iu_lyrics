@@ -28,7 +28,7 @@ class Song extends StatelessWidget {
       ),
       body: Container(
         child: ListView.builder(
-          itemCount: songLyrics.length,
+          itemCount: songLyrics == null ? 0 : songLyrics.length,
           itemBuilder: (BuildContext context, int index) {
             return Card(
               child: _buildRowLyric(index),

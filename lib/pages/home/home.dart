@@ -50,7 +50,7 @@ class _AlbumListState extends State<AlbumList> {
           builder: (context, snapshot) {
             var lyrics = json.decode(snapshot.data.toString());
             return ListView.builder(
-              itemCount: lyrics.length,
+              itemCount: lyrics == null ? 0 : lyrics.length,
               itemBuilder: (context, index) {
                 return _buildRow(lyrics[index]['album'], index, lyrics[index]['coverArt']);
               },
