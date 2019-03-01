@@ -19,24 +19,26 @@ class LyricsList extends StatefulWidget {
 
 class _LyricsListState extends State<LyricsList> {
 
-  void _openSong(String songTitle, int songIndex, List<dynamic> songLyrics) {
+  void _openSong(String songTitle, int songIndex, List<dynamic> lyricsHan, List<dynamic> lyricsRom, List<dynamic> lyricsEng) {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) =>
         Song(
-            albumTitle: widget.albumTitle,
-            albumIndex: widget.albumIndex,
-            songTitle: songTitle,
-            songIndex: songIndex,
-            songLyrics: songLyrics
+          albumTitle: widget.albumTitle,
+          albumIndex: widget.albumIndex,
+          songTitle: songTitle,
+          songIndex: songIndex,
+          lyricsHan: lyricsHan,
+          lyricsRom: lyricsRom,
+          lyricsEng: lyricsEng
         )
       ),
     );
   }
 
-  Widget _buildRowSong(String songTitle, int songIndex, List<dynamic> songLyrics) {
+  Widget _buildRowSong(String songTitle, int songIndex, List<dynamic> lyricsHan, List<dynamic> lyricsRom, List<dynamic> lyricsEng) {
     return InkWell(
-      onTap: () => _openSong(songTitle, songIndex, songLyrics),
+      onTap: () => _openSong(songTitle, songIndex, lyricsHan, lyricsRom, lyricsEng),
       child: ListTile(
         leading: ClipRRect(
           borderRadius: new BorderRadius.circular(4.0),
@@ -56,7 +58,9 @@ class _LyricsListState extends State<LyricsList> {
           child: _buildRowSong(
             widget.lyrics[widget.albumIndex]['songs'][index]['title'],
             index,
-            widget.lyrics[widget.albumIndex]['songs'][index]['lyrics']
+            widget.lyrics[widget.albumIndex]['songs'][index]['lyrics']['han'],
+            widget.lyrics[widget.albumIndex]['songs'][index]['lyrics']['rom'],
+            widget.lyrics[widget.albumIndex]['songs'][index]['lyrics']['eng']
           ),
         );
       },
