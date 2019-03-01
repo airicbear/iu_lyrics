@@ -2,7 +2,7 @@
     {
         "album": "BBIBBI",
         "date": "2018-10-10",
-        "coverArt": "assets/cover_art/bbibbi_64.jpg",
+        "coverArt": "assets/cover_art/bbibbi_128.jpg",
         "songs": [
             {
                 "title": "BBIBBI",
@@ -95,7 +95,7 @@
     {
         "album": "A flower bookmark 2",
         "date": "2017-09-22",
-        "coverArt": "assets/cover_art/a_flower_bookmark_2_64.jpg",
+        "coverArt": "assets/cover_art/a_flower_bookmark_2_128.jpg",
         "songs": [
             {
                 "title": "Autumn Morning",
@@ -381,7 +381,7 @@
     {
         "album": "Palette",
         "date": "2017-04-21",
-        "coverArt": "assets/cover_art/palette_64.jpg",
+        "coverArt": "assets/cover_art/palette_128.jpg",
         "songs": [
             {
                 "title": "Dlwlrma",
@@ -931,7 +931,7 @@
     {
         "album": "Chat-Shire",
         "date": "2015-10-23",
-        "coverArt": "assets/cover_art/chat_shire_64.jpg",
+        "coverArt": "assets/cover_art/chat_shire_128.jpg",
         "songs": [
             {
                 "title": "Shoes",
@@ -1438,7 +1438,7 @@
     {
         "album": "A flower bookmark",
         "date": "2014-05-16",
-        "coverArt": "assets/cover_art/a_flower_bookmark_64.jpg",
+        "coverArt": "assets/cover_art/a_flower_bookmark_128.jpg",
         "songs": [
             {
                 "title": "My Old Story",
@@ -1750,7 +1750,7 @@
     {
         "album": "Modern Times - Epilogue",
         "date": "2013-10-08",
-        "coverArt": "assets/cover_art/modern_times_epilogue_64.jpg",
+        "coverArt": "assets/cover_art/modern_times_epilogue_128.jpg",
         "songs": [
             {
                 "title": "Friday",
@@ -2449,7 +2449,7 @@
     {
         "album": "Last Fantasy",
         "date": "2011-11-29",
-        "coverArt": "assets/cover_art/last_fantasy_64.jpg",
+        "coverArt": "assets/cover_art/last_fantasy_128.jpg",
         "songs": [
             {
                 "title": "Secret",
@@ -2945,7 +2945,7 @@
     {
         "album": "REAL+",
         "date": "2011-02-17",
-        "coverArt": "assets/cover_art/real_plus_64.jpg",
+        "coverArt": "assets/cover_art/real_plus_128.jpg",
         "songs": [
             {
                 "title": "Only I Didn't Know",
@@ -2968,7 +2968,7 @@
     {
         "album": "REAL",
         "date": "2010-12-09",
-        "coverArt": "assets/cover_art/real_64.jpg",
+        "coverArt": "assets/cover_art/real_128.jpg",
         "songs": [
             {
                 "title": "This Is Not What I Thought",
@@ -3075,7 +3075,7 @@
     {
         "album": "IU...IM",
         "date": "2009-11-12",
-        "coverArt": "assets/cover_art/iu_im_64.jpg",
+        "coverArt": "assets/cover_art/iu_im_128.jpg",
         "songs": [
             {
                 "title": "Love Attack",
@@ -3122,7 +3122,7 @@
     {
         "album": "Growing Up",
         "date": "2009-04-23",
-        "coverArt": "assets/cover_art/growing_up_64.jpg",
+        "coverArt": "assets/cover_art/growing_up_128.jpg",
         "songs": [
             {
                 "title": "Looking At You",
@@ -3258,7 +3258,7 @@
     {
         "album": "Lost and Found",
         "date": "2008-09-23",
-        "coverArt": "assets/cover_art/lost_and_found_64.jpg",
+        "coverArt": "assets/cover_art/lost_and_found_128.jpg",
         "songs": [
             {
                 "title": "Ugly Duckling",

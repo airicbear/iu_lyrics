@@ -42,7 +42,7 @@ class _LyricsListState extends State<LyricsList> {
       child: ListTile(
         leading: ClipRRect(
           borderRadius: new BorderRadius.circular(4.0),
-          child: Image.asset(widget.coverArt , width: 52.0, height: 52.0)
+          child: Image.asset(widget.coverArt, width: 52.0, height: 52.0)
         ),
         title: Text(widget.lyrics[widget.albumIndex]['songs'][songIndex]['title'])
       ),
