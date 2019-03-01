@@ -11,7 +11,7 @@ class Song extends StatelessWidget {
   Song({Key key, this.lyrics, this.albumTitle, this.albumIndex, this.songTitle, this.songIndex, this.songLyrics})
       : super(key: key);
 
-  Widget _buildRowSong(int index) {
+  Widget _buildRowLyric(int index) {
     return InkWell(
       onTap: () {},
       child: ListTile(
@@ -31,7 +31,7 @@ class Song extends StatelessWidget {
           itemCount: songLyrics.length,
           itemBuilder: (BuildContext context, int index) {
             return Card(
-              child: _buildRowSong(index),
+              child: _buildRowLyric(index),
             );
           },
         ),

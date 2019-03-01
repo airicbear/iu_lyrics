@@ -14,18 +14,22 @@ class AlbumList extends StatefulWidget {
 
 class _AlbumListState extends State<AlbumList> {
 
-  void _openAlbum(String albumTitle, int albumIndex) {
+  void _openAlbum(String albumTitle, int albumIndex, String coverArt) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => Album(albumTitle: albumTitle, albumIndex: albumIndex,)),
+      MaterialPageRoute(builder: (context) => Album(albumTitle: albumTitle, albumIndex: albumIndex, coverArt: coverArt)),
     );
   }
 
-  Widget _buildRow(String albumTitle, int albumIndex) {
+  Widget _buildRow(String albumTitle, int albumIndex, String coverArt) {
     return Card(
       child: InkWell(
-        onTap: () => _openAlbum(albumTitle, albumIndex),
+        onTap: () => _openAlbum(albumTitle, albumIndex, coverArt),
         child: ListTile(
+          leading: ClipRRect(
+            borderRadius: new BorderRadius.circular(4.0),
+            child: Image.asset(coverArt, width: 52.0, height: 52.0)
+          ),
           title: Text(albumTitle),
         ),
       )
@@ -48,7 +52,7 @@ class _AlbumListState extends State<AlbumList> {
             return ListView.builder(
               itemCount: lyrics.length,
               itemBuilder: (context, index) {
-                return _buildRow(lyrics[index]['album'], index);
+                return _buildRow(lyrics[index]['album'], index, lyrics[index]['coverArt']);
               },
             );
           },
