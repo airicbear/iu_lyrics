@@ -15,7 +15,7 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="iu_lyrics"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/iu_cute">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
