@@ -26,7 +26,10 @@ class _AlbumListState extends State<AlbumList> {
       child: InkWell(
         onTap: () => _openAlbum(albumTitle, albumIndex, coverArt),
         child: ListTile(
-          leading: Image.asset(coverArt, width: 48.0, height: 48.0),
+          leading: ClipRRect(
+            borderRadius: new BorderRadius.circular(4.0),
+            child: Image.asset(coverArt, width: 52.0, height: 52.0)
+          ),
           title: Text(albumTitle),
         ),
       )
