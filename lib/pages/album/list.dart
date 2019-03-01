@@ -38,7 +38,7 @@ class _LyricsListState extends State<LyricsList> {
     return InkWell(
       onTap: () => _openSong(songTitle, songIndex, songLyrics),
       child: ListTile(
-        leading: Image.asset(widget.coverArt, width: 48.0, height: 48.0),
+        leading: Image.asset(widget.coverArt , width: 48.0, height: 48.0),
         title: Text(widget.lyrics[widget.albumIndex]['songs'][songIndex]['title'])
       ),
     );
