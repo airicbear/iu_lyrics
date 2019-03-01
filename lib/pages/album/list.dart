@@ -6,8 +6,9 @@ class LyricsList extends StatefulWidget {
   final List<dynamic> lyrics;
   final String albumTitle;
   final int albumIndex;
+  final String coverArt;
 
-  LyricsList({Key key, this.lyrics, this.albumTitle, this.albumIndex})
+  LyricsList({Key key, this.lyrics, this.albumTitle, this.albumIndex, this.coverArt})
     : super(key: key);
 
   @override
@@ -37,6 +38,7 @@ class _LyricsListState extends State<LyricsList> {
     return InkWell(
       onTap: () => _openSong(songTitle, songIndex, songLyrics),
       child: ListTile(
+        leading: Image.asset(widget.coverArt, width: 48.0, height: 48.0),
         title: Text(widget.lyrics[widget.albumIndex]['songs'][songIndex]['title'])
       ),
     );

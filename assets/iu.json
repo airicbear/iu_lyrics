@@ -1,6 +1,8 @@
 [
   {
     "album": "BBIBBI",
+    "date": "2018-10-10",
+    "coverArt": "assets/cover_art/bbibbi.jpg",
     "songs": [
       {
         "title": "BBIBBI",
@@ -87,50 +89,153 @@
     ]
   },
   {
-    "album": "Palette",
+    "album": "A flower bookmark 2",
+    "date": "2017-09-22",
+    "coverArt": "assets/cover_art/a_flower_bookmark_2.jpg",
     "songs": [
+      {
+        "title": "Autumn Morning",
+        "lyrics": []
+      },
+      {
+        "title": "Secret Garden",
+        "lyrics": []
+      },
+      {
+        "title": "Sleepless Rainy Night",
+        "lyrics": []
+      },
+      {
+        "title": "Last Night Story",
+        "lyrics": []
+      },
+      {
+        "title": "By the Stream",
+        "lyrics": []
+      },
+      {
+        "title": "Everyday with You",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Palette",
+    "date": "2017-04-21",
+    "coverArt": "assets/cover_art/palette.jpg",
+    "songs": [
+      {
+        "title": "Dlwlrma",
+        "lyrics": []
+      },
       {
         "title": "Palette",
         "lyrics": []
       },
       {
+        "title": "Can't Love You Anymore",
+        "lyrics": []
+      },
+      {
         "title": "Jam Jam",
+        "lyrics": []
+      },
+      {
+        "title": "Black Out",
+        "lyrics": []
+      },
+      {
+        "title": "Full Stop",
+        "lyrics": []
+      },
+      {
+        "title": "Through the Night",
+        "lyrics": []
+      },
+      {
+        "title": "Love Alone",
+        "lyrics": []
+      },
+      {
+        "title": "Dear Name",
         "lyrics": []
       }
     ]
   },
   {
     "album": "Chat-Shire",
+    "date": "2015-10-23",
+    "coverArt": "assets/cover_art/chat_shire.jpg",
     "songs": [
       {
+        "title": "Shoes",
+        "lyrics": []
+      },
+      {
+        "title": "Zezé",
+        "lyrics": []
+      },
+      {
+        "title": "Twenty-Three",
+        "lyrics": []
+      },
+      {
+        "title": "The Shower",
+        "lyrics": []
+      },
+      {
+        "title": "Red Queen",
+        "lyrics": []
+      },
+      {
+        "title": "Knees",
+        "lyrics": []
+      },
+      {
         "title": "Glasses",
-        "lyrics": []
-      },
-      {
-        "title": "Palette",
-        "lyrics": []
-      },
-      {
-        "title": "Jam Jam",
         "lyrics": []
       }
     ]
   },
   {
-    "album": "A flower bookmark 2",
+    "album": "A flower bookmark",
+    "date": "2014-05-16",
+    "coverArt": "assets/cover_art/a_flower_bookmark.jpg",
     "songs": [
       {
-        "title": "Palette",
+        "title": "My Old Story",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
+        "title": "Flower",
+        "lyrics": []
+      },
+      {
+        "title": "Pierrot Smiles at Us",
+        "lyrics": []
+      },
+      {
+        "title": "When Love Passes By",
+        "lyrics": []
+      },
+      {
+        "title": "The Meaning of You",
+        "lyrics": []
+      },
+      {
+        "title": "Dreams in Summer Night",
+        "lyrics": []
+      },
+      {
+        "title": "Boom Ladi Dadi",
         "lyrics": []
       }
     ]
   },
   {
     "album": "Modern Times - Epilogue",
+    "date": "2013-10-08",
+    "coverArt": "assets/cover_art/modern_times_epilogue.jpg",
     "songs": [
       {
         "title": "Friday",
@@ -767,196 +872,211 @@
     ]
   },
   {
-    "album": "REAL",
+    "album": "Last Fantasy",
+    "date": "2011-11-29",
+    "coverArt": "assets/cover_art/last_fantasy.jpg",
     "songs": [
       {
-        "title": "Palette",
+        "title": "Secret",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "IU...IM",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "Sleeping Price of the Woods",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "Growing Up",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "A Child Searching for Stars",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "A flower bookmark",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "You and I",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "Autumn Morning",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "Wallpaper Patterns",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "Can't Love You Anymore",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "Uncle",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "Through the Night",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "Wisdom Tooth",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "heart",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "Everything's Alright",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "SOGYEOKDONG",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "Last Fantasy",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "The Spring of Twenty",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "A Stray Puppy",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
-        "lyrics": []
-      }
-    ]
-  },
-  {
-    "album": "My Last Love OST Part.4",
-    "songs": [
-      {
-        "title": "Palette",
+        "title": "4AM",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
+        "title": "L'amant",
         "lyrics": []
       }
     ]
   },
   {
     "album": "REAL+",
+    "date": "2011-02-17",
+    "coverArt": "assets/cover_art/real_plus.jpg",
     "songs": [
       {
-        "title": "Palette",
+        "title": "Only I Didn't Know",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
+        "title": "Cruel Fairytale",
         "lyrics": []
       }
     ]
   },
   {
-    "album": "Nitpicking",
+    "album": "REAL",
+    "date": "2010-12-09",
+    "coverArt": "assets/cover_art/real.jpg",
     "songs": [
       {
-        "title": "Palette",
+        "title": "This Is Not What I Thought",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
+        "title": "The Thing I Do Slowly",
+        "lyrics": []
+      },
+      {
+        "title": "Good Day",
+        "lyrics": []
+      },
+      {
+        "title": "The Night of the First Breakup",
+        "lyrics": []
+      },
+      {
+        "title": "Alone in the Room",
+        "lyrics": []
+      },
+      {
+        "title": "Merry Christmas in Advance",
         "lyrics": []
       }
     ]
   },
   {
-    "album": "First Love",
+    "album": "IU...IM",
+    "date": "2009-11-12",
+    "coverArt": "assets/cover_art/iu_im.jpg",
     "songs": [
       {
-        "title": "first love",
+        "title": "Love Attack",
         "lyrics": []
-      }, 
+      },
       {
-        "title": "first love",
+        "title": "Taking a Train",
+        "lyrics": []
+      },
+      {
+        "title": "Marshmallow",
+        "lyrics": []
+      },
+      {
+        "title": "Morning Tears",
+        "lyrics": []
+      },
+      {
+        "title": "Heartbeating Date",
+        "lyrics": []
+      }
+    ]
+  },
+  {
+    "album": "Growing Up",
+    "date": "2009-04-23",
+    "coverArt": "assets/cover_art/growing_up.jpg",
+    "songs": [
+      {
+        "title": "Looking At You",
+        "lyrics": []
+      },
+      {
+        "title": "Boo",
+        "lyrics": []
+      },
+      {
+        "title": "Pitiful",
+        "lyrics": []
+      },
+      {
+        "title": "A Dreamer",
+        "lyrics": []
+      },
+      {
+        "title": "Every Sweet Day",
+        "lyrics": []
+      },
+      {
+        "title": "Lost Child",
+        "lyrics": []
+      },
+      {
+        "title": "Four Without Me",
+        "lyrics": []
+      },
+      {
+        "title": "You Know",
+        "lyrics": []
+      },
+      {
+        "title": "Graduation Day",
+        "lyrics": []
+      },
+      {
+        "title": "Feel So Good",
+        "lyrics": []
+      },
+      {
+        "title": "Ugly Duckling",
+        "lyrics": []
+      },
+      {
+        "title": "Face to Face (After Looking At You)",
         "lyrics": []
       }
     ]
   },
   {
     "album": "Lost and Found",
+    "date": "2008-09-23",
+    "coverArt": "assets/cover_art/lost_and_found.jpg",
     "songs": [
       {
-        "title": "Palette",
+        "title": "Ugly Duckling",
         "lyrics": []
       },
       {
-        "title": "Jam Jam",
+        "title": "Mia",
+        "lyrics": []
+      },
+      {
+        "title": "You Know",
+        "lyrics": []
+      },
+      {
+        "title": "Feel So Good",
+        "lyrics": []
+      },
+      {
+        "title": "Every Sweet Day",
         "lyrics": []
       }
     ]
