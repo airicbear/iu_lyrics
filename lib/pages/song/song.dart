@@ -1,24 +1,27 @@
 import 'package:flutter/material.dart';
 
 class Song extends StatelessWidget {
-  final List<dynamic> lyrics;
-  final String albumTitle;
-  final int albumIndex;
   final String songTitle;
-  final int songIndex;
   final List<dynamic> lyricsHan;
   final List<dynamic> lyricsRom;
   final List<dynamic> lyricsEng;
 
-  Song({Key key, this.lyrics, this.albumTitle, this.albumIndex, this.songTitle, this.songIndex, this.lyricsHan, this.lyricsRom, this.lyricsEng})
+  Song({Key key, this.songTitle, this.lyricsHan, this.lyricsRom, this.lyricsEng})
       : super(key: key);
 
-  Widget _buildRowLyric(List<dynamic> lyrics, int index) {
-    return InkWell(
-      onTap: () {},
-      child: ListTile(
-        title: Text(lyrics[index].toString()),
-      ),
+  Widget _buildLyrics(List<dynamic> lyrics) {
+    return ListView.builder(
+      itemCount: lyrics == null ? 0 : lyrics.length,
+      itemBuilder: (BuildContext context, int index) {
+        return Card(
+          child: InkWell(
+            onTap: () {},
+            child: ListTile(
+              title: Text(lyrics[index].toString()),
+            ),
+          ),
+        );
+      },
     );
   }
 
@@ -39,30 +42,9 @@ class Song extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            ListView.builder(
-              itemCount: lyricsHan == null ? 0 : lyricsHan.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Card(
-                  child: _buildRowLyric(lyricsHan, index),
-                );
-              },
-            ),
-            ListView.builder(
-              itemCount: lyricsRom == null ? 0 : lyricsRom.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Card(
-                  child: _buildRowLyric(lyricsRom, index),
-                );
-              },
-            ),
-            ListView.builder(
-              itemCount: lyricsEng == null ? 0 : lyricsEng.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Card(
-                  child: _buildRowLyric(lyricsEng, index),
-                );
-              },
-            ),
+            _buildLyrics(lyricsHan),
+            _buildLyrics(lyricsRom),
+            _buildLyrics(lyricsEng),
           ]
         ),
       )
