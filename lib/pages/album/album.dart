@@ -24,7 +24,7 @@ class Album extends StatelessWidget {
             .loadString('assets/iu.json'),
           builder: (context, snapshot) {
             var lyrics = json.decode(snapshot.data.toString());
-            return LyricsList(lyrics: lyrics, albumTitle: albumTitle, albumIndex: albumIndex, coverArt: coverArt,);
+            return LyricsList(lyrics: lyrics, albumIndex: albumIndex, coverArt: coverArt,);
           }
         ),
       ),

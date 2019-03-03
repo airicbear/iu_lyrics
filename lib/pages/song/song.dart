@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Song extends StatelessWidget {
-  final List<dynamic> lyrics;
-  final String albumTitle;
-  final int albumIndex;
   final String songTitle;
-  final int songIndex;
   final List<dynamic> lyricsHan;
   final List<dynamic> lyricsRom;
   final List<dynamic> lyricsEng;
 
-  Song({Key key, this.lyrics, this.albumTitle, this.albumIndex, this.songTitle, this.songIndex, this.lyricsHan, this.lyricsRom, this.lyricsEng})
+  Song({Key key, this.songTitle, this.lyricsHan, this.lyricsRom, this.lyricsEng})
       : super(key: key);
 
   Widget _buildLyrics(List<dynamic> lyrics) {
