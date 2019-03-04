@@ -3,28 +3,22 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:iu_lyrics/pages/album/album.dart';
 
-class AlbumList extends StatefulWidget {
+class AlbumList extends StatelessWidget {
   AlbumList({Key key, this.title}) : super(key: key);
 
   final String title;
 
-  @override
-  _AlbumListState createState() => _AlbumListState();
-}
-
-class _AlbumListState extends State<AlbumList> {
-
-  void _openAlbum(String albumTitle, int albumIndex, String coverArt) {
+  void _openAlbum(BuildContext context, String albumTitle, int albumIndex, String coverArt) {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => Album(albumTitle: albumTitle, albumIndex: albumIndex, coverArt: coverArt)),
     );
   }
 
-  Widget _buildRow(String albumTitle, int albumIndex, String coverArt) {
+  Widget _buildRow(BuildContext context, String albumTitle, int albumIndex, String coverArt) {
     return Card(
       child: InkWell(
-        onTap: () => _openAlbum(albumTitle, albumIndex, coverArt),
+        onTap: () => _openAlbum(context, albumTitle, albumIndex, coverArt),
         child: ListTile(
           leading: ClipRRect(
             borderRadius: new BorderRadius.circular(4.0),
@@ -40,7 +34,7 @@ class _AlbumListState extends State<AlbumList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(title),
       ),
       body: Container(
         child: FutureBuilder(
@@ -52,7 +46,7 @@ class _AlbumListState extends State<AlbumList> {
             return ListView.builder(
               itemCount: lyrics == null ? 0 : lyrics.length,
               itemBuilder: (context, index) {
-                return _buildRow(lyrics[index]['album'], index, lyrics[index]['coverArt']);
+                return _buildRow(context, lyrics[index]['album'], index, lyrics[index]['coverArt']);
               },
             );
           },
