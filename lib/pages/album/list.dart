@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:iu_lyrics/pages/song/song.dart';
 
-class LyricsList extends StatefulWidget {
+class LyricsList extends StatelessWidget {
   final List<dynamic> lyrics;
   final int albumIndex;
   final String coverArt;
@@ -10,15 +10,7 @@ class LyricsList extends StatefulWidget {
   LyricsList({Key key, this.lyrics, this.albumIndex, this.coverArt})
     : super(key: key);
 
-  @override
-  State<StatefulWidget> createState() {
-    return _LyricsListState();
-  }
-}
-
-class _LyricsListState extends State<LyricsList> {
-
-  void _openSong(String songTitle, List<dynamic> lyricsHan, List<dynamic> lyricsRom, List<dynamic> lyricsEng) {
+  void _openSong(BuildContext context, String songTitle, List<dynamic> lyricsHan, List<dynamic> lyricsRom, List<dynamic> lyricsEng) {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) =>
@@ -32,15 +24,15 @@ class _LyricsListState extends State<LyricsList> {
     );
   }
 
-  Widget _buildRowSong(String songTitle, int songIndex, List<dynamic> lyricsHan, List<dynamic> lyricsRom, List<dynamic> lyricsEng) {
+  Widget _buildRowSong(BuildContext context, String songTitle, int songIndex, List<dynamic> lyricsHan, List<dynamic> lyricsRom, List<dynamic> lyricsEng) {
     return InkWell(
-      onTap: () => _openSong(songTitle, lyricsHan, lyricsRom, lyricsEng),
+      onTap: () => _openSong(context, songTitle, lyricsHan, lyricsRom, lyricsEng),
       child: ListTile(
         leading: ClipRRect(
           borderRadius: new BorderRadius.circular(4.0),
-          child: Image.asset(widget.coverArt, width: 52.0, height: 52.0)
+          child: Image.asset(coverArt, width: 52.0, height: 52.0)
         ),
-        title: Text(widget.lyrics[widget.albumIndex]['songs'][songIndex]['title'])
+        title: Text(lyrics[albumIndex]['songs'][songIndex]['title'])
       ),
     );
   }
@@ -48,15 +40,16 @@ class _LyricsListState extends State<LyricsList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: widget.lyrics == null ? 0 : widget.lyrics[widget.albumIndex]['songs'].length,
+      itemCount: lyrics == null ? 0 : lyrics[albumIndex]['songs'].length,
       itemBuilder: (BuildContext context, int index) {
         return Card(
           child: _buildRowSong(
-            widget.lyrics[widget.albumIndex]['songs'][index]['title'],
+            context,
+            lyrics[albumIndex]['songs'][index]['title'],
             index,
-            widget.lyrics[widget.albumIndex]['songs'][index]['lyrics']['han'],
-            widget.lyrics[widget.albumIndex]['songs'][index]['lyrics']['rom'],
-            widget.lyrics[widget.albumIndex]['songs'][index]['lyrics']['eng']
+            lyrics[albumIndex]['songs'][index]['lyrics']['han'],
+            lyrics[albumIndex]['songs'][index]['lyrics']['rom'],
+            lyrics[albumIndex]['songs'][index]['lyrics']['eng']
           ),
         );
       },
