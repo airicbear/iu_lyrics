@@ -7,6 +7,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/iu_flower" />
+            android:src="@mipmap/iu_cute_round" />
     </item>
 </layer-list>
