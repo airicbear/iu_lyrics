@@ -4,9 +4,9 @@ A clean and simple lyrics app for IU's songs.
 
 ## Screenshots
 
-[<img src="./assets/screenshots/home.png" alt="Home page screenshot" width="270" height="480">](./lib/pages/home)
-[<img src="./assets/screenshots/album.png" alt="Album page screenshot" width="270" height="480">](./lib/pages/album)
-[<img src="./assets/screenshots/song.png" alt="Song page screenshot" width="270" height="480">](./lib/pages/song/)
+[<img src="./assets/screenshots/home.png" alt="Home page screenshot" width="270" height="480">](./assets/screenshots/home.png)
+[<img src="./assets/screenshots/album.png" alt="Album page screenshot" width="270" height="480">](./assets/screenshots/album.png)
+[<img src="./assets/screenshots/song.png" alt="Song page screenshot" width="270" height="480">](./assets/screenshots/song.png)
 
 ## Lyrics Resources
 
