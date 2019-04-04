@@ -1,16 +1,17 @@
-# iu_lyrics
+# IU Lyrics <img src="./assets/screenshots/launcher.png" width="64" alt="App icon">
 
-A new Flutter project.
+A clean and simple lyrics app for IU's songs.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+<img src="./assets/screenshots/home.png" alt="Home page screenshot" width="270" height="480">
+<img src="./assets/screenshots/album.png" alt="Album page screenshot" width="270" height="480">
+<img src="./assets/screenshots/song.png" alt="Song page screenshot" width="270" height="480">
 
-A few resources to get you started if this is your first Flutter project:
+## Lyrics Resources
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+These are some of the websites I used to find the lyrics:
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+- [AZLyrics](https://www.azlyrics.com/i/iu.html)
+- [ColorCodedLyrics](https://colorcodedlyrics.com/2018/02/iu-aiyu-lyrics-index)
+- [Genius](https://genius.com/artists/Iu)
