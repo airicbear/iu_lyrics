@@ -1,4 +1,4 @@
-# IU Lyrics <img src="./assets/screenshots/launcher.png" width="64" alt="App icon">
+# IU Lyrics <img src="./assets/launcher.png" width="64" alt="App icon">
 
 A clean and simple lyrics app for IU's songs. This app shows songs of which their lyrics may not have been added yet. If you are interested in contributing these lyrics please refer to the [How I add lyrics](#How-I-add-lyrics) section.
 
