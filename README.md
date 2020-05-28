@@ -1,6 +1,12 @@
 # IU Lyrics <img src="./assets/screenshots/launcher.png" width="64" alt="App icon">
 
-A clean and simple lyrics app for IU's songs.
+A clean and simple lyrics app for IU's songs. This app shows songs of which their lyrics may not have been added yet. If you are interested in contributing these lyrics, please refer to the [How I add lyrics](#How-I-add-lyrics) section.
+
+## Installation
+
+If you are interested installing the latest version of this app please visit [this project's releases page](https://github.com/airicbear/iu-lyrics/releases/latest) and download the `.apk` file.
+This app is **not** officially released on the Play Store.
+See the [disclaimer](#Disclaimer) for more details.
 
 ## Screenshots
 
@@ -50,7 +56,7 @@ These are some of the websites I use to find the lyrics:
 
 3. Find the lyrics online. Refer to the [Lyrics Resources](#Lyrics-Resources) section.
 
-4. Copy the Korean (Hangul) lyrics into a new file buffer in [VSCode](https://code.visualstudio.com/). (In VSCode, just click on `File -> New File` or type `Ctrl+N`)
+4. Copy the Korean (Hangul) lyrics into a new file buffer in [Visual Studio Code](https://code.visualstudio.com/). (In Visual Studio Code, just click on `File -> New File` or type `Ctrl+N`)
 
 5. Add a new line to the end of the file if there isn't one.
 
@@ -66,15 +72,45 @@ These are some of the websites I use to find the lyrics:
 
 11. Repeat the same procedure for the Roman and English lyrics starting at step 4, adding the corresponding lyrics to `"rom": []` and `"eng": []`.
 
-## Setup
+## Environment Setup
 
 1. Install [OpenJDK 8](https://openjdk.java.net/) (`sudo apt install openjdk-8-jdk`) **Note:** Java 8 is my recommended version for Flutter projects as of May 2020
 2. Make sure Java is installed by running `java -version`, if it doesn't work then you may need to add `java` to your `PATH`
-3. Install [Android Studio](https://developer.android.com/studio/)
 4. Install [Flutter](https://flutter.dev/docs/get-started/install) and make sure it's on your `PATH`
-5. Install Flutter plugin for Android Studio
 6. Run `flutter doctor --android-licenses` and accept all licenses
 7. Verify everything is good by running `flutter doctor`
-8. Clone the repository via `git clone https://github.com/airicbear/iu-lyrics` or Android Studio's integrated version control
-9. Open the project in Android Studio
-10. Add Dart SDK to Android Studio from your Flutter installation (e.g. `~/development/flutter/bin/cache/dart-sdk/`)
+8. Clone the repository via `git clone https://github.com/airicbear/iu-lyrics`
+
+### Android Studio
+
+1. Install [Android Studio](https://developer.android.com/studio/)
+
+2. Install the Flutter plugin for Android Studio.
+
+3. Add Dart SDK to Android Studio from your Flutter installation (e.g. `~/development/flutter/bin/cache/dart-sdk/`)
+
+For more information, [visit the Flutter documentation on setting up Android Studio for Flutter development](https://flutter.dev/docs/get-started/editor?tab=androidstudio).
+
+### Visual Studio Code
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/).
+
+2. Install the [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) and [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter) plug-ins for Visual Studio Code.
+
+For more information, [visit the Flutter documentation on setting up Visual Studio code for Flutter development](https://flutter.dev/docs/development/tools/vs-code).
+
+## Disclaimer
+
+There is an app on the Google Play Store called [IU 🎵 Lyrics (Offline) by Asmody](https://play.google.com/store/apps/details?id=com.asmody.iulyrics&hl=en_US).
+I am not affliated with the publisher whatsoever and I do not know their motivation in publishing my app to the Play Store.
+However their page on the Play Store includes an important disclaimer that applies to this app:
+
+This is an unofficial fan-made app.
+This fan app and its content are not officially endorsed or produced by, nor associated with or affiliated with the music artist(s) or any associated entities of the artist(s), such as management or record label.
+All trademarks and copyrights are property of their respective owners.
+Please support the artists by buying their songs or their ringtones.
+Any content used is used at a fan-base stand point.
+Artist and album artwork is used solely for promotion of the lawful retail sale of recorded music as ringtones, and no endorsement or sponsorship of our company or its products by any musical artists or other parties is expressed or implied.
+Artist names are for identification purposes only. Applicable fees are paid for all ringtone downloads through a license from the appropriate music publishers.
+The developer is a curator and aggregator providing easy access to publicly available content.
+Lyrics displayed by the fan app are property of their respective owners and may only be used for educational purposes.
