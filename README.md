@@ -75,7 +75,7 @@ However on some websites the text is not as nicely formatted in which case I nee
 
 11. Repeat the same procedure for the Roman and English lyrics starting at step 4, adding the corresponding lyrics to `"rom": []` and `"eng": []`.
 
-The lyrics should look something like this (without the `...`) when everything is properly formatted (example lyrics: "Boo" by IU):
+The lyrics should look something like this (without the `...`) when everything is properly formatted (example lyrics: ["Boo" by IU from Genius](https://genius.com/Iu-boo-lyrics)):
 
 ``` json
 "Think about it (IU) check it check (IU)",
@@ -90,7 +90,7 @@ The lyrics should look something like this (without the `...`) when everything i
 ```
 
 Each line represents a `Card` in Flutter.
-The empty line `"", ` then represents an empty Card which is used to separate each section of the song.
+The empty line `"",` then represents an empty Card which is used to separate each section of the song.
 
 ## Environment Setup
 
