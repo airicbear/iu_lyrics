@@ -1,6 +1,6 @@
 # IU Lyrics <img src="./assets/screenshots/launcher.png" width="64" alt="App icon">
 
-A clean and simple lyrics app for IU's songs. This app shows songs of which their lyrics may not have been added yet. If you are interested in contributing these lyrics, please refer to the [How I add lyrics](#How-I-add-lyrics) section.
+A clean and simple lyrics app for IU's songs. This app shows songs of which their lyrics may not have been added yet. If you are interested in contributing these lyrics please refer to the [How I add lyrics](#How-I-add-lyrics) section.
 
 ## Installation
 
@@ -31,6 +31,9 @@ These are some of the websites I use to find the lyrics:
 3. Add the new `eight_128.jpg` to the `assets/cover_art` folder.
 
 ## How I add lyrics
+
+This is generally the process I use for adding lyrics.
+However on some websites the text is not as nicely formatted in which case I need to edit it manually.
 
 1. Open the `assets/iu.json` file.
 
@@ -71,6 +74,23 @@ These are some of the websites I use to find the lyrics:
 10. Add the formatted Hangul lyrics into the brackets of `"han": []`.
 
 11. Repeat the same procedure for the Roman and English lyrics starting at step 4, adding the corresponding lyrics to `"rom": []` and `"eng": []`.
+
+The lyrics should look something like this (without the `...`) when everything is properly formatted (example lyrics: "Boo" by IU):
+
+``` json
+"Think about it (IU) check it check (IU)",
+"Boo boo boo True color present",
+"",
+"내가 별로라는 외몰 갖고 있는 너라고",
+"많이 안 좋아하는 버릇도 모조리 다 갖추고 있어",
+"어쩜 스치기만 해도 엄청나게 싫은 얼굴로 (No)",
+"널 쳐다봤어 (미안하긴 했어)",
+...
+"Boo"
+```
+
+Each line represents a `Card` in Flutter.
+The empty line `"", ` then represents an empty Card which is used to separate each section of the song.
 
 ## Environment Setup
 
