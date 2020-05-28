@@ -125,12 +125,12 @@ There is an app on the Google Play Store called [IU 🎵 Lyrics (Offline) by Asm
 I am not affliated with the publisher whatsoever and I do not know their motivation in publishing my app to the Play Store.
 However their page on the Play Store includes an important disclaimer that applies to this app:
 
-This is an unofficial fan-made app.
-This fan app and its content are not officially endorsed or produced by, nor associated with or affiliated with the music artist(s) or any associated entities of the artist(s), such as management or record label.
-All trademarks and copyrights are property of their respective owners.
-Please support the artists by buying their songs or their ringtones.
-Any content used is used at a fan-base stand point.
-Artist and album artwork is used solely for promotion of the lawful retail sale of recorded music as ringtones, and no endorsement or sponsorship of our company or its products by any musical artists or other parties is expressed or implied.
-Artist names are for identification purposes only. Applicable fees are paid for all ringtone downloads through a license from the appropriate music publishers.
-The developer is a curator and aggregator providing easy access to publicly available content.
-Lyrics displayed by the fan app are property of their respective owners and may only be used for educational purposes.
+> This is an unofficial fan-made app.
+> This fan app and its content are not officially endorsed or produced by, nor associated with or affiliated with the music artist(s) or any associated entities of the artist(s), such as management or record label.
+> All trademarks and copyrights are property of their respective owners.
+> Please support the artists by buying their songs or their ringtones.
+> Any content used is used at a fan-base stand point.
+Artist and album artwork is used solely for promotion of the lawful retail sale of recorded music as ringtones, and no endorsement or sponsorship of our company or > its products by any musical artists or other parties is expressed or implied.
+> Artist names are for identification purposes only. Applicable fees are paid for all ringtone downloads through a license from the appropriate music publishers.
+> The developer is a curator and aggregator providing easy access to publicly available content.
+> Lyrics displayed by the fan app are property of their respective owners and may only be used for educational purposes.
