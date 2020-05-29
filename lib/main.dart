@@ -9,7 +9,7 @@ class IULyricsApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'IU Lyrics',
-      theme: ThemeData(
+      darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
       home: AlbumList(title: 'IU Lyrics'),
