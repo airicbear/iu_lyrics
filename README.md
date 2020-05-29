@@ -1,11 +1,13 @@
 # IU Lyrics <img src="./assets/launcher.png" width="64" alt="App icon">
 
-A clean and simple lyrics app for IU's songs. This app shows songs of which their lyrics may not have been added yet. If you are interested in contributing these lyrics please refer to the [How I add lyrics](#How-I-add-lyrics) section.
+A clean and simple lyrics app for [IU's songs](https://en.wikipedia.org/wiki/List_of_songs_written_by_IU).
+
+This app shows songs of which their **lyrics may not have been added yet**. If you are interested in contributing these lyrics please refer to the [How I add lyrics](#How-I-add-lyrics) section.
 
 ## Installation
 
 If you are interested installing the latest version of this app please visit [this project's releases page](https://github.com/airicbear/iu-lyrics/releases/latest) and download the `.apk` file.
-This app is **not** officially released on the Play Store.
+This app is **not officially released on the [Google Play Store](https://play.google.com/store/search?q=iu%20lyrics)**.
 See the [disclaimer](#Disclaimer) for more details.
 
 ## Screenshots
@@ -89,8 +91,8 @@ The lyrics should look something like this (without the `...`) when everything i
 "Boo"
 ```
 
-Each line represents a `Card` in Flutter.
-The empty line `"",` then represents an empty Card which is used to separate each section of the song.
+Each line represents a [`Card`](https://api.flutter.dev/flutter/material/Card-class.html) in Flutter.
+The empty line `"",` then represents an empty `Card` which is used to separate each section of the song.
 
 ## Environment Setup
 
@@ -119,7 +121,23 @@ For more information, [visit the Flutter documentation on setting up Android Stu
 
 For more information, [visit the Flutter documentation on setting up Visual Studio code for Flutter development](https://flutter.dev/docs/development/tools/vs-code).
 
+## Installing
+
+This will build an `app.apk` at `build/app/outputs/release/`:
+
+``` sh
+flutter build apk --split-per-abi
+```
+
+Then to install the latest build to your device just do:
+
+``` sh
+flutter install
+```
+
 ## Disclaimer
+
+### Content rights
 
 There is an app on the Google Play Store called [IU 🎵 Lyrics (Offline) by Asmody](https://play.google.com/store/apps/details?id=com.asmody.iulyrics&hl=en_US).
 I am not affliated with the publisher whatsoever and I do not know their motivation in publishing my app to the Play Store.
@@ -134,3 +152,8 @@ Artist and album artwork is used solely for promotion of the lawful retail sale 
 > Artist names are for identification purposes only. Applicable fees are paid for all ringtone downloads through a license from the appropriate music publishers.
 > The developer is a curator and aggregator providing easy access to publicly available content.
 > Lyrics displayed by the fan app are property of their respective owners and may only be used for educational purposes.
+
+### Content quality
+
+I do not know Korean and therefore cannot verify the quality of the lyrics and/or translations of the lyrics.
+If you find that some lyrics are wrong, please [submit an issue](https://github.com/airicbear/iu-lyrics/issues) specifying which lyrics are wrong and your sources for the correct lyrics.
