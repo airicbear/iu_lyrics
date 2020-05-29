@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:iu_lyrics/pages/album/album.dart';
+import 'settings.dart';
 
 class AlbumList extends StatelessWidget {
   AlbumList({Key key, this.title}) : super(key: key);
@@ -13,6 +14,10 @@ class AlbumList extends StatelessWidget {
       context,
       MaterialPageRoute(builder: (context) => Album(albumTitle: albumTitle, albumIndex: albumIndex, coverArt: coverArt)),
     );
+  }
+
+  void _openSettings(BuildContext context) {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Settings()));
   }
 
   Widget _buildRow(BuildContext context, String albumTitle, int albumIndex, String coverArt) {
@@ -35,6 +40,12 @@ class AlbumList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.settings),
+            onPressed: () => _openSettings(context)
+          )
+        ]
       ),
       body: Container(
         child: FutureBuilder(
