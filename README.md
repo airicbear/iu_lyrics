@@ -2,7 +2,7 @@
 
 A clean and simple lyrics app for [IU's songs](https://en.wikipedia.org/wiki/List_of_songs_written_by_IU).
 
-This app shows songs of which their **lyrics may not have been added yet**. If you are interested in contributing these lyrics please refer to the [How I add lyrics](#How-I-add-lyrics) section.
+This app shows songs of which their **lyrics may not have been added yet**. If you are interested in contributing these lyrics please [submit an issue](https://github.com/airicbear/iu-lyrics/issues) or refer to the [How I add lyrics](#How-I-add-lyrics) section and [create a pull request](https://github.com/airicbear/iu-lyrics/pulls).
 
 ## Installation
 
