@@ -23,6 +23,7 @@ These are some of the websites I use to find the lyrics:
 - [AZLyrics](https://www.azlyrics.com/i/iu.html)
 - [ColorCodedLyrics](https://colorcodedlyrics.com/2018/02/iu-aiyu-lyrics-index)
 - [Genius](https://genius.com/artists/Iu)
+- [YouTube](https://www.youtube.com/results?search_query=iu+lyrics)
 
 ## How I add album cover art
 
