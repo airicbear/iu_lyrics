@@ -5,59 +5,58 @@ import 'package:iu_lyrics/pages/album/album.dart';
 import 'settings.dart';
 
 class AlbumList extends StatelessWidget {
-  AlbumList({Key key, this.title}) : super(key: key);
+  AlbumList({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
-  void _openAlbum(BuildContext context, String albumTitle, int albumIndex, String coverArt) {
+  void _openAlbum(BuildContext context, String albumTitle, int albumIndex,
+      String coverArt) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => Album(albumTitle: albumTitle, albumIndex: albumIndex, coverArt: coverArt)),
+      MaterialPageRoute(
+          builder: (context) => Album(
+              albumTitle: albumTitle,
+              albumIndex: albumIndex,
+              coverArt: coverArt)),
     );
   }
 
   void _openSettings(BuildContext context) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Settings()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => Settings()));
   }
 
-  Widget _buildRow(BuildContext context, String albumTitle, int albumIndex, String coverArt) {
+  Widget _buildRow(BuildContext context, String albumTitle, int albumIndex,
+      String coverArt) {
     return Card(
-      child: InkWell(
-        onTap: () => _openAlbum(context, albumTitle, albumIndex, coverArt),
-        child: ListTile(
-          leading: ClipRRect(
+        child: InkWell(
+      onTap: () => _openAlbum(context, albumTitle, albumIndex, coverArt),
+      child: ListTile(
+        leading: ClipRRect(
             borderRadius: new BorderRadius.circular(4.0),
-            child: Image.asset(coverArt, width: 52.0, height: 52.0)
-          ),
-          title: Text(albumTitle),
-        ),
-      )
-    );
+            child: Image.asset(coverArt, width: 52.0, height: 52.0)),
+        title: Text(albumTitle),
+      ),
+    ));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.settings),
-            onPressed: () => _openSettings(context)
-          )
-        ]
-      ),
+      appBar: AppBar(title: Text(title), actions: <Widget>[
+        IconButton(
+            icon: Icon(Icons.settings), onPressed: () => _openSettings(context))
+      ]),
       body: Container(
         child: FutureBuilder(
-          future: DefaultAssetBundle
-              .of(context)
-              .loadString('assets/iu.json'),
+          future: DefaultAssetBundle.of(context).loadString('assets/iu.json'),
           builder: (context, snapshot) {
             var lyrics = json.decode(snapshot.data.toString());
             return ListView.builder(
               itemCount: lyrics == null ? 0 : lyrics.length,
               itemBuilder: (context, index) {
-                return _buildRow(context, lyrics[index]['album'], index, lyrics[index]['coverArt']);
+                return _buildRow(context, lyrics[index]['album'], index,
+                    lyrics[index]['coverArt']);
               },
             );
           },

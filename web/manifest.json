@@ -1,0 +1,23 @@
+{
+    "name": "iu_lyrics",
+    "short_name": "iu_lyrics",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "IU lyrics app.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/launcher.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/launcher.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
