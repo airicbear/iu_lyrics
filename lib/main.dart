@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iu_lyrics/pages/home/home.dart';
+import 'package:iu_lyrics/ui/home.dart';
 
 void main() => runApp(IULyricsApp());
 
