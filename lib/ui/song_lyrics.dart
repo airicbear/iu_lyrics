@@ -47,6 +47,11 @@ class _SongLyricsState extends State<SongLyrics>
       bottomNavigationBar: TabBar(
         controller: tabController,
         labelColor: Theme.of(context).accentColor,
+        labelStyle: TextStyle(
+          fontFamily: 'Georgia',
+          fontSize: 24.0,
+          fontWeight: FontWeight.bold,
+        ),
         tabs: List<Tab>.generate(
           widget.song.lyrics.length,
           (index) {

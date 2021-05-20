@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:iu_lyrics/model/album.dart';
@@ -12,7 +13,16 @@ class AlbumList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(
+        title: Text(
+          title,
+          style: TextStyle(
+            fontFamily: 'Georgia',
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       body: Container(
         child: FutureBuilder(
           future: DefaultAssetBundle.of(context).loadString('assets/iu.json'),
