@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:iu_lyrics/model/album.dart';
 import 'package:iu_lyrics/ui/album_songs.dart';
 
-class AlbumList extends StatelessWidget {
-  AlbumList({Key? key, required this.title}) : super(key: key);
+class AlbumsList extends StatelessWidget {
+  AlbumsList({Key? key, required this.title}) : super(key: key);
 
   final String title;
 

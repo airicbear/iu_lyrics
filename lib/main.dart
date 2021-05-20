@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iu_lyrics/ui/home.dart';
+import 'package:iu_lyrics/ui/albums_list.dart';
 
 void main() => runApp(IULyricsApp());
 
@@ -27,7 +27,7 @@ class IULyricsApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: AlbumList(title: 'IU Lyrics'),
+      home: AlbumsList(title: 'IU Lyrics'),
     );
   }
 }
