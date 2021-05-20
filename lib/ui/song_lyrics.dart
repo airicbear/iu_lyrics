@@ -12,21 +12,30 @@ class SongLyrics extends StatefulWidget {
 
 class _SongLyricsState extends State<SongLyrics>
     with SingleTickerProviderStateMixin {
-  late List<dynamic> lyrics;
+  late String currentLanguage;
+  late List<String> lyrics;
   late TabController tabController;
 
   @override
   void initState() {
     super.initState();
-    tabController =
-        TabController(length: widget.song.lyrics.allLyrics.length, vsync: this);
+    tabController = TabController(
+      length: widget.song.lyrics.length,
+      vsync: this,
+    );
     tabController.addListener(() {
       setState(() {
-        lyrics =
-            widget.song.lyrics.allLyrics.values.toList()[tabController.index];
+        lyrics = widget.song.lyrics.values.elementAt(tabController.index);
+        currentLanguage = widget.song.lyrics.keys
+            .elementAt(tabController.index)
+            .toUpperCase();
       });
     });
-    lyrics = widget.song.lyrics.allLyrics.entries.first.value;
+
+    // tabController defaults to first set of lyrics
+    lyrics = widget.song.lyrics.entries.first.value;
+    currentLanguage =
+        widget.song.lyrics.keys.elementAt(tabController.index).toUpperCase();
   }
 
   @override
@@ -39,24 +48,58 @@ class _SongLyricsState extends State<SongLyrics>
         controller: tabController,
         labelColor: Theme.of(context).accentColor,
         tabs: List<Tab>.generate(
-          widget.song.lyrics.allLyrics.length,
-          (index) => Tab(
-            text:
-                widget.song.lyrics.allLyrics.keys.toList()[index].toUpperCase(),
-          ),
+          widget.song.lyrics.length,
+          (index) {
+            String label =
+                widget.song.lyrics.keys.elementAt(index).toUpperCase();
+
+            return Tab(
+              text: label,
+            );
+          },
         ),
       ),
-      body: ListView.builder(
-        itemBuilder: (BuildContext context, int index) {
-          final String line = lyrics[index];
-          return ListTile(
-            title: Text(
-              line,
-            ),
-          );
-        },
-        itemCount: lyrics.length,
+      body: _SongLyricsList(
+        currentLanguage: currentLanguage,
+        lyrics: lyrics,
       ),
+    );
+  }
+}
+
+class _SongLyricsList extends StatelessWidget {
+  final String currentLanguage;
+  final List<String> lyrics;
+
+  _SongLyricsList({
+    Key? key,
+    required this.currentLanguage,
+    required this.lyrics,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    if (lyrics.isEmpty) {
+      return ListView(
+        children: [
+          ListTile(
+            title: Text(
+              "Sorry, there are no '$currentLanguage' lyrics available for this song yet.",
+              style: TextStyle(
+                color: Theme.of(context).disabledColor,
+              ),
+            ),
+          ),
+        ],
+      );
+    }
+    return ListView.builder(
+      itemBuilder: (BuildContext context, int index) {
+        return ListTile(
+          title: Text(lyrics[index]),
+        );
+      },
+      itemCount: lyrics.length,
     );
   }
 }

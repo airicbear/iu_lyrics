@@ -31,11 +31,11 @@ class _AlbumSongsList extends StatelessWidget {
     return ListView.builder(
       itemCount: album.songs.length,
       itemBuilder: (BuildContext context, int index) {
-        return Card(
-          child: _AlbumSongItem(
-            albumCoverArt: album.imagePath,
-            song: album.songs.elementAt(index),
-          ),
+        Song song = album.songs.elementAt(index);
+
+        return _AlbumSongItem(
+          albumCoverArt: album.imagePath,
+          song: song,
         );
       },
     );
@@ -46,25 +46,60 @@ class _AlbumSongItem extends StatelessWidget {
   final String albumCoverArt;
   final Song song;
 
-  const _AlbumSongItem(
-      {Key? key, required this.albumCoverArt, required this.song})
-      : super(key: key);
+  const _AlbumSongItem({
+    Key? key,
+    required this.albumCoverArt,
+    required this.song,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => SongLyrics(song: song)),
-        );
-      },
-      child: ListTile(
-        leading: ClipRRect(
-          borderRadius: new BorderRadius.circular(4.0),
-          child: Image.asset(albumCoverArt, width: 52.0, height: 52.0),
+    if (!song.hasLyrics()) {
+      return Card(
+        child: InkWell(
+          onTap: () {},
+          child: ListTile(
+            leading: ClipRRect(
+              borderRadius: new BorderRadius.circular(4.0),
+              child: Container(
+                width: 52.0,
+                height: 52.0,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    colorFilter: new ColorFilter.mode(
+                        Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                    image: ExactAssetImage(albumCoverArt),
+                  ),
+                ),
+              ),
+            ),
+            title: Text(
+              song.title,
+              style: TextStyle(
+                color: Theme.of(context).disabledColor,
+              ),
+            ),
+          ),
         ),
-        title: Text(song.title),
+      );
+    }
+
+    return Card(
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => SongLyrics(song: song)),
+          );
+        },
+        child: ListTile(
+          leading: ClipRRect(
+            borderRadius: new BorderRadius.circular(4.0),
+            child: Image.asset(albumCoverArt, width: 52.0, height: 52.0),
+          ),
+          title: Text(song.title),
+        ),
       ),
     );
   }
