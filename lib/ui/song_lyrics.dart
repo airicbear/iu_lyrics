@@ -100,8 +100,20 @@ class _SongLyricsList extends StatelessWidget {
     }
     return ListView.builder(
       itemBuilder: (BuildContext context, int index) {
+        final String line = lyrics[index];
+
         return ListTile(
-          title: Text(lyrics[index]),
+          title: line.startsWith('[')
+              ? Text(
+                  line.substring(1, line.length - 1),
+                  style: TextStyle(
+                    fontFamily: 'Georgia',
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w600,
+                    color: Theme.of(context).disabledColor,
+                  ),
+                )
+              : Text(line),
         );
       },
       itemCount: lyrics.length,
