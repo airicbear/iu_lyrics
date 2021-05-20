@@ -24,6 +24,7 @@ class AlbumsList extends StatelessWidget {
         ),
       ),
       body: Container(
+        padding: EdgeInsets.symmetric(vertical: 2.0),
         child: FutureBuilder(
           future: DefaultAssetBundle.of(context).loadString('assets/iu.json'),
           builder: (context, snapshot) {
@@ -68,6 +69,10 @@ class _AlbumListRow extends StatelessWidget {
             ),
           ),
           title: Text(album.title),
+          trailing: Text(
+            '${album.releaseDate.year}',
+            style: TextStyle(color: Theme.of(context).disabledColor),
+          ),
         ),
       ),
     );
