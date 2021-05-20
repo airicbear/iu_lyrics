@@ -27,13 +27,13 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
     defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.github.airicbear.iu_lyrics"
         minSdkVersion 16
         targetSdkVersion 30
