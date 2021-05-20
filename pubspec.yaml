@@ -1,5 +1,5 @@
 name: iu_lyrics
-description: A simple and open source lyrics app for IU's songs.
+description: A simple lyrics app for IU
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -32,6 +32,17 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.9.0
+  flutter_native_splash: ^1.1.8+4
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/launcher.png"
+
+flutter_native_splash:
+  color: "#673ab7"
+  image: "assets/splash.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
