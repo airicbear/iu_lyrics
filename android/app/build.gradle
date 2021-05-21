@@ -33,6 +33,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
     compileSdkVersion 30
+    ndkVersion "23.0.7344513-beta4"
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -59,6 +60,9 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.release
+            ndk {
+                debugSymbolLevel 'SYMBOL_TABLE'
+            }
         }
     }
 }
