@@ -24,9 +24,6 @@ class IULyricsApp extends StatelessWidget {
         ),
         brightness: Brightness.dark,
       ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
       home: AlbumsList(title: 'IU Lyrics'),
     );
   }
