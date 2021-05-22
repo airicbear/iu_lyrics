@@ -9669,6 +9669,37 @@
         ]
     },
     {
+        "album": "Spring of a Twenty Year Old",
+        "date": "2012-05-11",
+        "coverArt": "assets/cover_art/spring_of_a_twenty_year_old_128.jpg",
+        "songs": [
+            {
+                "title": "Peach",
+                "lyrics": {
+                    "han": [],
+                    "rom": [],
+                    "eng": []
+                }
+            },
+            {
+                "title": "Every End of the Day",
+                "lyrics": {
+                    "han": [],
+                    "rom": [],
+                    "eng": []
+                }
+            },
+            {
+                "title": "I Really Don't Like Her",
+                "lyrics": {
+                    "han": [],
+                    "rom": [],
+                    "eng": []
+                }
+            }
+        ]
+    },
+    {
         "album": "Last Fantasy",
         "date": "2011-11-29",
         "coverArt": "assets/cover_art/last_fantasy_128.jpg",
@@ -12156,6 +12187,29 @@
             },
             {
                 "title": "Merry Christmas in Advance",
+                "lyrics": {
+                    "han": [],
+                    "rom": [],
+                    "eng": []
+                }
+            }
+        ]
+    },
+    {
+        "album": "Nitpicking",
+        "date": "2010-06-03",
+        "coverArt": "assets/cover_art/nitpicking_128.jpg",
+        "songs": [
+            {
+                "title": "Nagging",
+                "lyrics": {
+                    "han": [],
+                    "rom": [],
+                    "eng": []
+                }
+            },
+            {
+                "title": "Rain Drop",
                 "lyrics": {
                     "han": [],
                     "rom": [],
