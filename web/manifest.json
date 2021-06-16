@@ -1,11 +1,11 @@
 {
-    "name": "iu_lyrics",
-    "short_name": "iu_lyrics",
+    "name": "IU Lyrics",
+    "short_name": "IU Lyrics",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Lyrics app for IU.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
