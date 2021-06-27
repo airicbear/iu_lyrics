@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:iu_lyrics/model/song.dart';
 
 class SongLyrics extends StatefulWidget {
@@ -104,16 +105,16 @@ class _SongLyricsList extends StatelessWidget {
 
         return ListTile(
           title: line.startsWith('[')
-              ? Text(
+              ? HtmlWidget(
                   line.substring(1, line.length - 1),
-                  style: TextStyle(
+                  textStyle: TextStyle(
                     fontFamily: 'Georgia',
                     fontSize: 16.0,
                     fontWeight: FontWeight.w600,
                     color: Theme.of(context).disabledColor,
                   ),
                 )
-              : Text(line),
+              : HtmlWidget(line),
         );
       },
       itemCount: lyrics.length,
