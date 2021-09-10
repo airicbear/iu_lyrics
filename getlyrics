@@ -1,0 +1,24 @@
+#!/Users/ericnguyen/opt/anaconda3/bin/python
+#
+# Print song lyrics from https://genius.com/
+#
+# Usage (Linux):
+#   alias xclip="xclip -selection c"
+#   ./lyrics [url] | xclip
+#
+# Usage (MacOS):
+#   ./lyrics [url] | pbcopy
+#
+
+from bs4 import BeautifulSoup
+import sys
+import requests
+
+if __name__ == '__main__':
+    url = sys.argv[1]
+    r = requests.get(url)
+    html = r.text
+    soup = BeautifulSoup(html, 'html.parser')
+    lyrics = str(soup.find_all('div', {'class': 'eOLwDW'}))
+    for line in lyrics.split('<br/>'):
+        print(line)
