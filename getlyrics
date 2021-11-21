@@ -19,6 +19,6 @@ if __name__ == '__main__':
     r = requests.get(url)
     html = r.text
     soup = BeautifulSoup(html, 'html.parser')
-    lyrics = str(soup.find_all('div', {'class': 'eOLwDW'}))
+    lyrics = str(soup.find_all('div', {'class': 'lgZgEN'}))
     for line in lyrics.split('<br/>'):
-        print(line)
+        print(f'"{line}",')
