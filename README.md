@@ -130,6 +130,12 @@ Then to install the latest build to your device just do:
 flutter install
 ```
 
+## Release
+
+```sh
+flutter build appbundle
+```
+
 ## Contributing
 
 If you are interested in contributing these lyrics please [submit an issue](https://github.com/airicbear/iu-lyrics/issues) or [create a pull request](https://github.com/airicbear/iu-lyrics/pulls).
