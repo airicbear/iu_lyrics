@@ -1,3 +1,3 @@
 # Privacy Policy
 
-This application does not store nor trasmit any user data.
+This application does not store nor share any user data.
